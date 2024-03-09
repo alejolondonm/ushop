@@ -3,21 +3,34 @@
 * {
     margin: 0;
 }
-    
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .seccion {
     height: 568px;
     width: 320px;
     border: 1px solid black;
+
 }
-    
+
 .ocultar {
     display: none;
 }
-    
-.navbar{
+
+.navbar {
     height: 35px;
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.flecha_atras {
+    position: absolute;
+    left: 5px;
 }

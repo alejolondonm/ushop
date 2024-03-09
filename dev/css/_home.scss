@@ -1,36 +1,116 @@
-#home{
-    
-    background-image: url('/dev/img/home_figma.png');
+#home {
+
     background-size: cover;
-}
-
-.buscador{
-    height: 45px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
-.categorias{
+.buscador {
+    height: 45px;
+}
+
+.categorias {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0 30px;
+    position: relative;
 }
 
-.categoria{
-    display: flex;
+.categoria {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-.categoria-fondo{
+.cambiar-categoria {
+    background-color: gray;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+.cambiar-categoria-izquierda {
+    position: absolute;
+    left: 12px;
+}
+
+.cambiar-categoria-derecha {
+    position: absolute;
+    right: 12px;
+}
+
+.categoria-fondo {
     border-radius: 50%;
     height: 76px;
     width: 76px;
     background: gray;
+}
+
+.estados {
+    margin-top: 16px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+.estado {
+
+    width: 72px;
+    height: 22px;
+    background-color: gray;
+    font-size: 10px;
+    border-radius: 2px;
+}
+
+.productos {
+    margin: 15px 0;
+    padding: 0 35px;
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: none;
+
+}
+
+.producto {
+    position: relative;
+    width: 100%;
+    margin: 18px 0;
+    height: 105px;
+    border: 1px solid black;
+    padding: 10px 12px;
+    border-radius: 18px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.productos .producto:first-child {
+    margin-top: 0;
+}
+
+
+.foto-producto {
+    height: 85px;
+    width: 90px;
+    border-radius: 8px;
+}
+
+.foto-producto img {
+    object-fit: cover;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+.informacion-producto {
+    margin-left: 10px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.precio-producto {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    font-size: 12px;
 }
