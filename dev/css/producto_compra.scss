@@ -1,0 +1,16 @@
+#producto_compra {
+    background-image: url('/dev/img/producto_compra_figma.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.fotos_producto {
+    margin-top: 18px;
+}
+
+
+.foto_producto {
+    height: 140px;
+    width: 220px;
+}
