@@ -1,28 +1,53 @@
-#inicio{
+h1{
+    margin-top: 42px;
+    margin-bottom: 32px;
+}
+
+
+.inicio-box {
+    height: 568px;
+    width: 320px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url('/dev/img/inicio_figma.png');
     background-size: cover;
+}
+
+.inicio-box button {
+    width: 250px;
+    height: 40px;
+    border-radius: 16px;
+    background-color: grey;
     display: flex;
     justify-content: center;
+    align-items: center;
     
 }
 
+#boton-vendedor{
+    margin-bottom: 31px;
+    background-color: blue;
+}
+
+#boton-comprador{
+    background-color: green;
+    margin-bottom: 56px;
+}
+
+
+
 #imagen{
-    position: absolute;
+    
+    margin-top: 93px;
+    margin-bottom: 42px;
     background-color: red;
     width: 222px;
     height: 138.76px;
     border-radius: 9px;
-    left: 50px;
-    right: 50px;
-    top: 92px;
     display: flex;
     justify-content: center;
 }
 
-#bienvenido{
-    position: absolute; 
-    top:273px;
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Inter ';
-}
+
