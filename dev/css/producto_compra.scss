@@ -1,5 +1,4 @@
 #producto_compra {
-    background-image: url('/dev/img/producto_compra_figma.png');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -13,4 +12,63 @@
 .foto_producto {
     height: 140px;
     width: 220px;
+}
+
+.puntos_imagen {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+
+}
+
+.punto {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.seleccionado {
+    background-color: black;
+
+}
+
+
+.informacion_producto {
+    margin-top: 15px;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.btn_wpp {
+    height: 40px;
+    width: 100%;
+    margin: 0 35px;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 35px;
+}
+
+.wpp_icon {
+    height: 25px;
+    margin-left: 10px;
+}
+
+textarea {
+    resize: none;
+    width: 250px;
+    height: 72px;
+    margin: 0 35px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }

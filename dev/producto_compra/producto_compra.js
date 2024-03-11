@@ -14,10 +14,24 @@ function cambiarFoto(direccion) {
     document.querySelector('.foto_producto').src = fotos[indiceFoto];
 }
 
+function actualizarPuntos() {
+    const puntos = document.querySelectorAll('.punto');
+    puntos.forEach((punto, index) => {
+        if (index === indiceFoto) {
+            punto.classList.add('seleccionado');
+        } else {
+            punto.classList.remove('seleccionado');
+        }
+    });
+}
+
+
 document.getElementById('flecha_izquierda').addEventListener('click', function () {
     cambiarFoto('izquierda');
+    actualizarPuntos();
 });
 
 document.getElementById('flecha_derecha').addEventListener('click', function () {
     cambiarFoto('derecha');
+    actualizarPuntos();
 });
