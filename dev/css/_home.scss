@@ -11,10 +11,16 @@
 
 .categorias {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 0 30px;
     position: relative;
+    align-items: center;
+}
+
+.grupo-categorias {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .categoria {

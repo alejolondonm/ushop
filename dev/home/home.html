@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/home.scss">
     <link rel="stylesheet" href="../css/main.scss">
 </head>
 
@@ -21,29 +20,50 @@
             <input placeholder="Buscar"></input>
         </section>
         <section class="categorias">
-            <div class="cambiar-categoria cambiar-categoria-izquierda center" onclick="cambiarCategoria('izquierda')">
+            <div id="cambiar-categoria-izquierda" class="cambiar-categoria cambiar-categoria-izquierda center">
                 <img src="/dev/img/iconos/flecha-izquierda.png" alt="flecha_izquierda"></img>
             </div>
-            <div class="categoria center">
-                <div class="categoria-fondo center">
-                    <img src="/dev/img/categorias/comida.png" alt="comida"></img>
+            <div id="categorias-1" class="grupo-categorias">
+                <div class="categoria center">
+                    <div class="categoria-fondo center">
+                        <img src="/dev/img/categorias/comida.png" alt="comida"></img>
+                    </div>
+                    <h5>Comida</h5>
                 </div>
-                <h5>Comida</h5>
-            </div>
-            <div class="categoria center">
-                <div class="categoria-fondo center">
-                    <img src="/dev/img/categorias/comida.png" alt="comida"></img>
+                <div class="categoria center">
+                    <div class="categoria-fondo center">
+                        <img src="/dev/img/categorias/comida.png" alt="comida"></img>
+                    </div>
+                    <h5>Accesorios</h5>
                 </div>
-                <h5>Accesorios</h5>
-            </div>
-            <div class="categoria center">
-                <div class="categoria-fondo center">
-                    <img src="/dev/img/categorias/comida.png" alt="comida"></img>
+                <div class="categoria center">
+                    <div class="categoria-fondo center">
+                        <img src="/dev/img/categorias/comida.png" alt="comida"></img>
+                    </div>
+                    <h5>Ropa</h5>
                 </div>
-                <h5>Ropa</h5>
             </div>
-
-            <div class="cambiar-categoria cambiar-categoria-derecha center" onclick="cambiarCategoria('derecha')">
+            <div id="categorias-2" class="grupo-categorias ocultar">
+                <div class="categoria center">
+                    <div class="categoria-fondo center">
+                        <img src="/dev/img/categorias/comida.png" alt="comida"></img>
+                    </div>
+                    <h5>Dulces</h5>
+                </div>
+                <div class="categoria center">
+                    <div class="categoria-fondo center">
+                        <img src="/dev/img/categorias/comida.png" alt="comida"></img>
+                    </div>
+                    <h5>Fritos</h5>
+                </div>
+                <div class="categoria center">
+                    <div class="categoria-fondo center">
+                        <img src="/dev/img/categorias/comida.png" alt="comida"></img>
+                    </div>
+                    <h5>Otros</h5>
+                </div>
+            </div>
+            <div id="cambiar-categoria-derecha" class="cambiar-categoria cambiar-categoria-derecha center">
                 <img src="/dev/img/iconos/flecha-derecha.png" alt="flecha_derecha"></img>
             </div>
         </section>
