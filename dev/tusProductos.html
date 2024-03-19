@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/tusProductos.scss">
+    <link rel="stylesheet" href="./css/tusproductos.scss">
 </head>
 
 <body>
+    <nav class="navbar">
+        <img class="flecha_atras" src="/dev/img/iconos/flecha-izquierda.png" alt="Flecha para atras"></img>
+        <img class="perfil" src="/dev/img/iconos/perfil3.png" alt="mi perfil"></img>
+        <h2>Tus Productos</h2>
+    </nav>
     <section id="tusProductos" class="seccion">
-        <nav class="navbar">
-            <h2>Tus Productos</h2>
-            <img class="flecha_atras" src="/dev/img/iconos/flecha-izquierda.png" alt="Flecha para atras"></img>
-        </nav>
+        
         <section class="productos">
             <div class="producto">
                 <div class="foto-producto center">
@@ -95,6 +97,16 @@
             </div>
         </section>
     </section>
+    <footer class="barra-inferior">
+        <label class="switch">
+            <input type="checkbox" id="interruptor">
+            <span class="slider"></span>
+            <span id="estado-interruptor">Activar</span>
+        </label>
+        <img class="add" src="/dev/img/iconos/add.png" alt="add"></img>
+    </footer>
+
+    <script src="./js/tusProductos.js"></script>
 </body>
 
 </html>

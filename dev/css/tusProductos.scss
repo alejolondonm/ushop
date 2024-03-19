@@ -1,36 +1,175 @@
+* {
+    margin: 0;
+}
+
 #tusProductos{
-    
     background-image: url('/dev/img/home_vendedor_figma.png');
     background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+    
+.seccion {
+    height: 568px;
+    width: 320px;
+    border: 1px solid black;
 }
 
-.buscador{
-    height: 45px;
+.flecha_atras {
+    position: absolute;
+    left: 10px;
+}
+
+.perfil {
+    position: absolute;
+    width: 28px;
+    left: 280px;
+}
+
+.navbar{
+    background-color: rgb(219,219,219);
+    height: 34px;
+    width: 320px;
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.categorias{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 30px;
+.productos {
+    margin: 15px 0;
+    padding: 0 35px;
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: none;
+
 }
 
-.categoria{
+.producto {
+    position: relative;
+    width: 100%;
+    margin: 18px 0;
+    height: 105px;
+    border: 1px solid black;
+    padding: 10px 12px;
+    border-radius: 18px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.productos .producto:first-child {
+    margin-top: 0;
+}
+
+.productos .producto:last-child {
+    margin-bottom: 45px;
+}
+
+.foto-producto {
+    height: 85px;
+    width: 90px;
+    border-radius: 8px;
+}
+
+.foto-producto img {
+    object-fit: cover;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+.informacion-producto {
+    margin-left: 10px;
+    font-size: 12px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.categoria-fondo{
-    border-radius: 50%;
-    height: 76px;
-    width: 76px;
-    background: gray;
+.precio-producto {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    font-size: 12px;
+}
+
+.barra-inferior {
+    background-color: rgb(219,219,219, 0.5);
+    height: 50px;
+    width: 320px;
+    border: 1px solid black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000; 
 }
+
+.add {
+    position: absolute;
+    width: 37px;
+    left: 250px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(110px);
+}
+
+#estado-interruptor {
+    position: absolute;
+    top: 50%;
+    left: 45px; 
+    transform: translateY(-50%);
+}
+
+.switch-desactivado{
+    left: 35px !important; 
+}
+
