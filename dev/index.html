@@ -16,8 +16,8 @@
         <div id="logo-inicio"></div>
         <h2>¡Bienvenido!</h2>
         <h1>Ingresar como</h1>
-        <button id="boton-vendedor" onclick="cambiarSeccion('inicio','home')">Vendedor</button>
-        <button id="boton-comprador" onclick="cambiarSeccion('inicio','login')">Comprador</button>
+        <button id="boton-vendedor" onclick="cambiarSeccion('inicio','login')">Vendedor</button>
+        <button id="boton-comprador" onclick="cambiarSeccion('inicio','home')">Comprador</button>
 
     </section>
     <section id="login" class="login-box ocultar">
@@ -211,13 +211,14 @@
         </nav>
         <section class="fotos_producto">
             <div class="center">
-                <img id="flecha_izquierda" src="/dev/img/iconos/flecha-izquierda.png" alt="flecha_izquierda">
-                <img class="foto_producto" src="/dev/img/productos/fresas_crema.png" alt="papitas">
-                <img id="flecha_derecha" src="/dev/img/iconos/flecha-derecha.png" alt="flecha_derecha">
+                <img id="flecha_izquierda" class="flecha" src="/dev/img/iconos/flecha-izquierda.png"
+                    alt="flecha_izquierda">
+                <img id="foto_producto" class="foto_producto" src="/dev/img/productos/fresas_crema.png" alt="papitas">
+                <img id="flecha_derecha" class="flecha" src="/dev/img/iconos/flecha-derecha.png" alt="flecha_derecha">
             </div>
             <div class="puntos_imagen">
-                <span class="punto seleccionado"></span>
-                <span class="punto"></span>
+                <span class="punto punto-comprador seleccionado"></span>
+                <span class="punto punto-comprador"></span>
             </div>
         </section>
         <section class="informacion_producto center">
@@ -381,14 +382,17 @@
 
             <section class="fotos_producto_crear">
                 <div class="center">
-                    <img id="flecha_izquierda_crear" src="/dev/img/iconos/flecha-izquierda.png" alt="flecha_izquierda">
+                    <img id="flecha_izquierda_crear" class="flecha" src="/dev/img/iconos/flecha-izquierda.png"
+                        alt="flecha_izquierda">
                     <img src="/dev/img/iconos/upload.png" class="subir-foto" alt="subir-foto"></img>
-                    <img class="foto_producto_crear" src="./img/productos/cd1.jpg" alt="papitas">
-                    <img id="flecha_derecha_crear" src="/dev/img/iconos/flecha-derecha.png" alt="flecha_derecha">
+                    <img id="foto_producto_crear" class="foto_producto_crear" src="./img/productos/cd1.jpg"
+                        alt="papitas">
+                    <img id="flecha_derecha_crear" class="flecha" src="/dev/img/iconos/flecha-derecha.png"
+                        alt="flecha_derecha">
                 </div>
                 <div class="puntos_imagen">
-                    <span class="punto seleccionado"></span>
-                    <span class="punto"></span>
+                    <span class="punto punto-crear seleccionado"></span>
+                    <span class="punto punto-crear"></span>
                 </div>
             </section>
             <div class="categoria-container">
@@ -425,15 +429,17 @@
 
             <section class="fotos_producto_crear">
                 <div class="center">
-                    <img id="flecha_izquierda_detalles" src="/dev/img/iconos/flecha-izquierda.png"
+                    <img id="flecha_izquierda_detalles" class="flecha" src="/dev/img/iconos/flecha-izquierda.png"
                         alt="flecha_izquierda">
                     <img src="/dev/img/iconos/edit-v2.png" class="editar-foto" alt="editar"></img>
-                    <img class="foto_producto_crear" src="./img/productos/cd1.jpg" alt="papitas">
-                    <img id="flecha_derecha_detalles" src="/dev/img/iconos/flecha-derecha.png" alt="flecha_derecha">
+                    <img id="foto_producto_detalles" class="foto_producto_crear" src="./img/productos/cd1.jpg"
+                        alt="papitas">
+                    <img id="flecha_derecha_detalles" class="flecha" src="/dev/img/iconos/flecha-derecha.png"
+                        alt="flecha_derecha">
                 </div>
                 <div class="puntos_imagen">
-                    <span class="punto seleccionado"></span>
-                    <span class="punto"></span>
+                    <span class="punto punto-detalles seleccionado"></span>
+                    <span class="punto punto-detalles"></span>
                 </div>
             </section>
             <div class="categoria-container">
