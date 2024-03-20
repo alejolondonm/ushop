@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+#crearProducto{
+    background-image: url('/dev/img/crear_producto_figma.png');
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flecha_atras {
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+}
+
+.navbar{
+    background-color: rgb(219,219,219);
+    height: 34px;
+    width: 320px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 250px;
+    margin: auto;
+    padding: 20px;
+}
+
+input[type="text"] {
+    border-radius: 5px;
+    border: 1px solid #a1a1a1;
+    width: 250px;
+    height: 38px;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+#nombre {
+    
+}
+
+#descripcion {
+
+}
+
+#precio {
+
+}
