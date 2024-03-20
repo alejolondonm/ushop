@@ -3,7 +3,7 @@
 }
 
 #crearProducto{
-    background-image: url('/dev/img/crear_producto_figma.png');
+    /* background-image: url('/dev/img/crear_producto_figma.png'); */
     background-size: cover;
     justify-content: space-between;
     align-items: center;
@@ -44,14 +44,116 @@ input[type="text"] {
     font-size: 15px;
 }
 
+#categoria {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #a1a1a1;
+    width: 255px;
+    height: 38px;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0 30px 0 10px;
+    position: relative;
+}
+
 #nombre {
     
 }
 
 #descripcion {
-
+    margin-top: 10px;
+    height: 70px;
 }
 
 #precio {
 
+}
+
+.fotos_producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+    position: relative;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 180px;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+#flecha_izquierda,
+#flecha_derecha {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+#flecha_izquierda {
+    left: -20; 
+    cursor: pointer;
+}
+
+#flecha_derecha {
+    right: -20;
+    cursor: pointer;
+}
+
+.foto_producto {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.puntos_imagen {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.punto {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.seleccionado {
+    background-color: black;
+}
+
+
+.btn {
+    height: 40px;
+    width: 100%;
+    margin: 30px 35px;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: rgb(219,219,219);
+}
+
+
+.subir-foto {
+    position: absolute;
+    width: 28px;
+    top: 0.5px;
+    left: 223px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 9px;
+    cursor: pointer;
 }
