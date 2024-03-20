@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+}
+
+#tusProductos{
+    /* background-image: url('/dev/img/home_vendedor_figma.png'); */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+    
+.seccion {
+    height: 568px;
+    width: 320px;
+    border: 1px solid black;
+}
+
+.flecha_atras {
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+}
+
+.perfil {
+    position: absolute;
+    width: 28px;
+    left: 280px;
+    cursor: pointer;
+}
+
+.editar {
+    position: absolute;
+    width: 28px;
+    top: -10px;
+    left: 230px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.navbar{
+    background-color: rgb(219,219,219);
+    height: 34px;
+    width: 320px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos {
+    margin: 15px 0;
+    padding: 15px 35px;
+    flex: 1;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.producto {
+    position: relative;
+    width: 100%;
+    min-height: 125px;
+    height: auto;
+    margin: 18px 0;
+    border: 2px solid black;
+    padding: 10px 12px;
+    border-radius: 18px;
+    display: flex;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.productos .producto:first-child {
+    margin-top: 0;
+}
+
+.productos .producto:last-child {
+    margin-bottom: 45px;
+}
+
+.foto-producto {
+    height: 85px;
+    width: 90px;
+    border-radius: 8px;
+}
+
+.foto-producto img {
+    object-fit: cover;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+.informacion-producto {
+    margin-left: 10px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.titulo {
+    margin-bottom: 8px;
+}
+
+.precio-producto {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    font-size: 12px;
+}
+
+.descripcion-producto {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 225px;
+}
+
+.barra-inferior {
+    height: 50px;
+    width: 320px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.add {
+    margin-left: 15px;
+    background-color: white;
+    width: 37px;
+    cursor: pointer;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3ab898;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    z-index: 1002;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(110px);
+}
+
+#estado-interruptor {
+    position: absolute;
+    top: 50%;
+    left: 45px; 
+    transform: translateY(-50%);
+    z-index: 1001;
+}
+
+.switch-desactivado{
+    left: 35px !important; 
+    z-index: 1001;
+}
+
