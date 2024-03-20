@@ -3,7 +3,7 @@
 }
 
 #tusProductos{
-    background-image: url('/dev/img/home_vendedor_figma.png');
+    /* background-image: url('/dev/img/home_vendedor_figma.png'); */
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -18,12 +18,23 @@
 .flecha_atras {
     position: absolute;
     left: 10px;
+    cursor: pointer;
 }
 
 .perfil {
     position: absolute;
     width: 28px;
     left: 280px;
+    cursor: pointer;
+}
+
+.editar {
+    position: absolute;
+    width: 28px;
+    top: -10px;
+    left: 230px;
+    background-color: white;
+    cursor: pointer;
 }
 
 .navbar{
@@ -38,23 +49,24 @@
 
 .productos {
     margin: 15px 0;
-    padding: 0 35px;
+    padding: 15px 35px;
     flex: 1;
-    overflow-y: auto;
     scrollbar-width: none;
-
+    overflow-y: scroll;
 }
 
 .producto {
     position: relative;
     width: 100%;
+    min-height: 125px;
+    height: auto;
     margin: 18px 0;
-    height: 105px;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 10px 12px;
     border-radius: 18px;
     display: flex;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .productos .producto:first-child {
@@ -83,7 +95,11 @@
     font-size: 12px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.titulo {
+    margin-bottom: 8px;
 }
 
 .precio-producto {
@@ -93,11 +109,17 @@
     font-size: 12px;
 }
 
+.descripcion-producto {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 225px;
+}
+
 .barra-inferior {
-    background-color: rgb(219,219,219, 0.5);
     height: 50px;
     width: 320px;
-    border: 1px solid black;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -108,9 +130,10 @@
 }
 
 .add {
-    position: absolute;
+    margin-left: 15px;
+    background-color: white;
     width: 37px;
-    left: 250px;
+    cursor: pointer;
 }
 
 .switch {
@@ -133,7 +156,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #3ab898;
     transition: .4s;
     border-radius: 34px;
 }
@@ -146,8 +169,9 @@
     left: 4px;
     bottom: 4px;
     background-color: white;
-    transition: .5s;
+    transition: .4s;
     border-radius: 50%;
+    z-index: 1002;
 }
 
 input:checked + .slider {
@@ -167,9 +191,11 @@ input:checked + .slider:before {
     top: 50%;
     left: 45px; 
     transform: translateY(-50%);
+    z-index: 1001;
 }
 
 .switch-desactivado{
     left: 35px !important; 
+    z-index: 1001;
 }
 
