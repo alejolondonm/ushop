@@ -10,8 +10,8 @@
 
 <body>
     <script src="./js/script.js"></script>
-    <script src="./js/home.js"></script>
     <script type="module" src="./js/producto_compra.js"></script>
+
     <section id="inicio" class="inicio-box">
         <div id="logo-inicio"></div>
         <h2>¡Bienvenido!</h2>
@@ -30,7 +30,7 @@
         <form action="">
             <input type="text" placeholder="Correo" required>
             <input type="password" placeholder="Contraseña" required>
-            <input type="submit" value="Ingresar">
+            <input type="submit" value="Ingresar" onclick="cambiarSeccion('login','productos_venta')">
             <!-- <input type="submit" value="Registrate"> -->
         </form>
         <p id="no-cuenta-texto">¿No tienes cuenta?</p>
@@ -49,7 +49,7 @@
             <input type="text" placeholder="Correo" required>
             <input type="text" placeholder="Celular" required>
             <input type="password" placeholder="Contraseña" required>
-            <input type="submit" value="Crear Cuenta">
+            <input type="submit" value="Crear Cuenta" onclick="cambiarSeccion('register','productos_venta')">
         </form>
 
     </section>
@@ -234,6 +234,256 @@
             </button>
 
         </footer>
+    </section>
+
+    <section id="productos_venta" class="seccion ocultar">
+        <nav class="navbar">
+            <img class="flecha_atras" src="/dev/img/iconos/flecha-izquierda.png" alt="Flecha para atras"
+                onclick="cambiarSeccion('productos_venta','login')"></img>
+            <img class="perfil" src="/dev/img/iconos/perfil3.png" onclick="cambiarSeccion('productos_venta','perfil')"
+                alt="mi perfil"></img>
+            <h2>Tus Productos</h2>
+        </nav>
+        <section class="productos-vendedor">
+
+            <div class="producto-vendedor" onclick="cambiarSeccion('productos_venta','detallesProducto')">
+                <img src="/dev/img/iconos/edit.png" class="editar" alt="editar"></img>
+                <div class="foto-producto-vendedor center">
+                    <img src="/dev/img/productos/papitas.jpg" alt="papitas"></img>
+                    <div class="descripcion-producto">
+                        Papas de queso, con adición de quesocrema
+                    </div>
+                </div>
+                <div class="informacion-producto-vendedor">
+                    <h3 class="titulo">Papitas de queso</h3>
+                    <h3 class="titulo">$ 5.000</h3>
+                    <h3 class="titulo">Snacks</h3>
+                </div>
+            </div>
+            <div class="producto-vendedor" onclick="cambiarSeccion('productos_venta','detallesProducto')">
+                <img src="/dev/img/iconos/edit.png" class="editar" alt="editar"></img>
+                <div class="foto-producto-vendedor center">
+                    <img src="/dev/img/productos/fresas_crema.png" alt="papitas"></img>
+                    <div class="descripcion-producto">
+                        Fresas con crema y limón chocolate
+                    </div>
+                </div>
+                <div class="informacion-producto-vendedor">
+                    <h3 class="titulo">Fresas con crema</h3>
+                    <h3 class="titulo">$ 8.000</h3>
+                    <h3 class="titulo">Frutas</h3>
+                </div>
+            </div>
+            <div class="producto-vendedor" onclick="cambiarSeccion('productos_venta','detallesProducto')">
+                <img src="/dev/img/iconos/edit.png" class="editar" alt="editar"></img>
+                <div class="foto-producto-vendedor center">
+                    <img src="/dev/img/productos/rollo_canela.png" alt="papitas"></img>
+                    <div class="descripcion-producto">
+                        Rollo de canela con arequipe
+                    </div>
+                </div>
+                <div class="informacion-producto-vendedor">
+                    <h3 class="titulo">Rollo de canela</h3>
+                    <h3 class="titulo">$ 4.000</h3>
+                    <h3 class="titulo">Postres</h3>
+                </div>
+            </div>
+            <div class="producto-vendedor">
+                <img src="/dev/img/iconos/edit.png" class="editar" alt="editar"></img>
+                <div class="foto-producto-vendedor center">
+                    <img src="/dev/img/productos/papitas.jpg" alt="papitas"></img>
+                    <div class="descripcion-producto">
+                        Papas de queso, con adición de quesocrema
+                    </div>
+                </div>
+                <div class="informacion-producto-vendedor">
+                    <h3 class="titulo">Papitas de queso</h3>
+                    <h3 class="titulo">$ 5.000</h3>
+                    <h3 class="titulo">Snacks</h3>
+                </div>
+            </div>
+            <div class="producto-vendedor">
+                <img src="/dev/img/iconos/edit.png" class="editar" alt="editar"></img>
+                <div class="foto-producto-vendedor center">
+                    <img src="/dev/img/productos/fresas_crema.png" alt="papitas"></img>
+                    <div class="descripcion-producto">
+                        Fresas con crema y limón chocolate
+                    </div>
+                </div>
+                <div class="informacion-producto-vendedor">
+                    <h3 class="titulo">Fresas con crema</h3>
+                    <h3 class="titulo">$ 8.000</h3>
+                    <h3 class="titulo">Frutas</h3>
+                </div>
+            </div>
+            <div class="producto-vendedor">
+                <img src="/dev/img/iconos/edit.png" class="editar" alt="editar"></img>
+                <div class="foto-producto-vendedor center">
+                    <img src="/dev/img/productos/rollo_canela.png" alt="papitas"></img>
+                    <div class="descripcion-producto">
+                        Rollo de canela con arequipe
+                    </div>
+                </div>
+                <div class="informacion-producto-vendedor">
+                    <h3 class="titulo">Rollo de canela</h3>
+                    <h3 class="titulo">$ 4.000</h3>
+                    <h3 class="titulo">Postres</h3>
+                </div>
+            </div>
+            <div class="producto-vendedor">
+                <img src="/dev/img/iconos/edit.png" class="editar" alt="editar"></img>
+                <div class="foto-producto-vendedor center">
+                    <img src="/dev/img/productos/papitas.jpg" alt="papitas"></img>
+                    <div class="descripcion-producto">
+                        Papas de queso, con adición de quesocrema
+                    </div>
+                </div>
+                <div class="informacion-producto-vendedor">
+                    <h3 class="titulo">Papitas de queso</h3>
+                    <h3 class="titulo">$ 5.000</h3>
+                    <h3 class="titulo">Snacks</h3>
+                </div>
+            </div>
+            <div class="producto-vendedor">
+                <img src="/dev/img/iconos/edit.png" class="editar" alt="editar"></img>
+                <div class="foto-producto-vendedor center">
+                    <img src="/dev/img/productos/fresas_crema.png" alt="papitas"></img>
+                    <div class="descripcion-producto">
+                        Fresas con crema y limón chocolate
+                    </div>
+                </div>
+                <div class="informacion-producto-vendedor">
+                    <h3 class="titulo">Fresas con crema</h3>
+                    <h3 class="titulo">$ 8.000</h3>
+                    <h3 class="titulo">Frutas</h3>
+                </div>
+            </div>
+        </section>
+        <footer class="barra-inferior">
+            <label class="switch">
+                <input type="checkbox" id="interruptor">
+                <span class="slider"></span>
+                <span id="estado-interruptor">Activar</span>
+            </label>
+            <img class="add" src="/dev/img/iconos/add.png" alt="add"
+                onclick="cambiarSeccion('productos_venta','crearProducto')"></img>
+        </footer>
+    </section>
+    <section id="crearProducto" class="seccion ocultar">
+        <nav class="navbar">
+            <img class="flecha_atras" src="/dev/img/iconos/flecha-izquierda.png"
+                onclick="cambiarSeccion('crearProducto','productos_venta')" alt="Flecha para atras"></img>
+            <h2>Crear Producto</h2>
+        </nav>
+        <div class="form-container">
+
+            <input id="nombre" type="text" placeholder="   Nombre Producto">
+
+            <section class="fotos_producto_crear">
+                <div class="center">
+                    <img id="flecha_izquierda_crear" src="/dev/img/iconos/flecha-izquierda.png" alt="flecha_izquierda">
+                    <img src="/dev/img/iconos/upload.png" class="subir-foto" alt="subir-foto"></img>
+                    <img class="foto_producto_crear" src="./img/productos/cd1.jpg" alt="papitas">
+                    <img id="flecha_derecha_crear" src="/dev/img/iconos/flecha-derecha.png" alt="flecha_derecha">
+                </div>
+                <div class="puntos_imagen">
+                    <span class="punto seleccionado"></span>
+                    <span class="punto"></span>
+                </div>
+            </section>
+            <div class="categoria-container">
+                <select id="categoria" name="categoria">
+                    <option value="">Categoría</option>
+                    <option value="comida">Comida</option>
+                    <option value="snacks">Snacks</option>
+                    <option value="postres">Postres</option>
+                    <option value="frutas">Frutas</option>
+                    <option value="ropa">Ropa</option>
+                </select>
+                <div id="categoria-linea-separacion"></div>
+            </div>
+
+            <input id="descripcion" type="text" placeholder="   Descripción">
+            <input id="precio" type="text" placeholder="   Precio">
+
+            <button class="btn center">
+                <span>Crear Producto</span>
+            </button>
+
+        </div>
+    </section>
+    <section id="detallesProducto" class="seccion ocultar">
+        <nav class="navbar">
+            <img class="flecha_atras" src="/dev/img/iconos/flecha-izquierda.png"
+                onclick="cambiarSeccion('detallesProducto','productos_venta')" alt="Flecha para atras"></img>
+            <img class="delete" src="/dev/img/iconos/delete.png" alt="mi perfil"></img>
+            <h2>Detalles del Producto</h2>
+        </nav>
+        <div class="form-container">
+
+            <input id="nombre" type="text" placeholder="   Nombre Producto">
+
+            <section class="fotos_producto_crear">
+                <div class="center">
+                    <img id="flecha_izquierda_detalles" src="/dev/img/iconos/flecha-izquierda.png"
+                        alt="flecha_izquierda">
+                    <img src="/dev/img/iconos/edit-v2.png" class="editar-foto" alt="editar"></img>
+                    <img class="foto_producto_crear" src="./img/productos/cd1.jpg" alt="papitas">
+                    <img id="flecha_derecha_detalles" src="/dev/img/iconos/flecha-derecha.png" alt="flecha_derecha">
+                </div>
+                <div class="puntos_imagen">
+                    <span class="punto seleccionado"></span>
+                    <span class="punto"></span>
+                </div>
+            </section>
+            <div class="categoria-container">
+                <select id="categoria" name="categoria">
+                    <option value="">Categoría</option>
+                    <option value="comida">Comida</option>
+                    <option value="snacks">Snacks</option>
+                    <option value="postres">Postres</option>
+                    <option value="frutas">Frutas</option>
+                    <option value="ropa">Ropa</option>
+                </select>
+                <div id="categoria-linea-separacion"></div>
+            </div>
+
+            <input id="descripcion" type="text" placeholder="   Descripción">
+            <input id="precio" type="text" placeholder="   Precio">
+
+            <button class="btn center">
+                <span>Guardar Cambios</span>
+            </button>
+
+        </div>
+    </section>
+    <section id="perfil" class="seccion ocultar">
+        <nav class="navbar">
+            <h2>Mi perfil</h2>
+            <img class="flecha_atras" src="/dev/img/iconos/flecha-izquierda.png"
+                onclick="cambiarSeccion('perfil','productos_venta')" alt="Flecha para atras"></img>
+        </nav>
+        <section class="center">
+            <img class="imagen-perfil" src="/dev/img/iconos/perfil.svg" alt="foto de perfil">
+            </img>
+        </section>
+        <section class="formulario center">
+
+            <input type="text" placeholder="Nombre Completo">
+            <input type="text" placeholder="Correo">
+            <input type="text" placeholder="Celular">
+
+        </section>
+        <section class="botones-footer center">
+
+            <button id="guardar-btn" class="general_btn center">
+                Guardar cambios
+            </button>
+            <button class="general_btn center">
+                <span>Eliminar cuenta </span>
+            </button>
+
+        </section>
     </section>
 </body>
 

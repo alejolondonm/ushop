@@ -9,3 +9,4 @@ function cambiarSeccion(idOcultar, idMostrar) {
         console.error('Una o ambas secciones especificadas no existen.');
     }
 }
+

@@ -2,24 +2,15 @@
     margin: 0;
 }
 
-#tusProductos{
+#productos_venta {
     /* background-image: url('/dev/img/home_vendedor_figma.png'); */
     background-size: cover;
     display: flex;
     justify-content: center;
-}
-    
-.seccion {
-    height: 568px;
-    width: 320px;
-    border: 1px solid black;
+    flex-direction: column;
+    position: absolute;
 }
 
-.flecha_atras {
-    position: absolute;
-    left: 10px;
-    cursor: pointer;
-}
 
 .perfil {
     position: absolute;
@@ -37,17 +28,7 @@
     cursor: pointer;
 }
 
-.navbar{
-    background-color: rgb(219,219,219);
-    height: 34px;
-    width: 320px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.productos {
+.productos-vendedor {
     margin: 15px 0;
     padding: 15px 35px;
     flex: 1;
@@ -55,7 +36,7 @@
     overflow-y: scroll;
 }
 
-.producto {
+.producto-vendedor {
     position: relative;
     width: 100%;
     min-height: 125px;
@@ -69,28 +50,28 @@
     cursor: pointer;
 }
 
-.productos .producto:first-child {
+.productos-vendedor .producto:first-child {
     margin-top: 0;
 }
 
-.productos .producto:last-child {
+.productos-vendedor .producto:last-child {
     margin-bottom: 45px;
 }
 
-.foto-producto {
+.foto-producto-vendedor {
     height: 85px;
     width: 90px;
     border-radius: 8px;
 }
 
-.foto-producto img {
+.foto-producto-vendedor img {
     object-fit: cover;
     border-radius: inherit;
     height: 100%;
     width: 100%;
 }
 
-.informacion-producto {
+.informacion-producto-vendedor {
     margin-left: 10px;
     font-size: 12px;
     display: flex;
@@ -120,18 +101,19 @@
 .barra-inferior {
     height: 50px;
     width: 320px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .add {
     margin-left: 15px;
     background-color: white;
+    border-radius: 50%;
     width: 37px;
     cursor: pointer;
 }
@@ -174,28 +156,27 @@
     z-index: 1002;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: #2196F3;
 }
 
-input:focus + .slider {
+input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     transform: translateX(110px);
 }
 
 #estado-interruptor {
     position: absolute;
     top: 50%;
-    left: 45px; 
+    left: 45px;
     transform: translateY(-50%);
     z-index: 1001;
 }
 
-.switch-desactivado{
-    left: 35px !important; 
+.switch-desactivado {
+    left: 35px !important;
     z-index: 1001;
 }
-
