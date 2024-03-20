@@ -29,15 +29,17 @@ h1 {
 #boton-vendedor {
     margin-bottom: 31px;
     background-color: blue;
+    cursor: pointer;
 }
 
 #boton-comprador {
     background-color: green;
     margin-bottom: 56px;
+    cursor: pointer;
 }
 
 #logo-inicio {
-
+    background-image: url('/dev/img/logo.png');
     margin-top: 93px;
     margin-bottom: 42px;
     width: 222px;
