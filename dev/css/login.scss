@@ -5,9 +5,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('/dev/img/login_vendedor_figma.png');
+    // background-image: url('/dev/img/login_vendedor_figma.png');
     background-size: cover;
     background-position: center;
+}
+
+#no-cuenta-texto{
+    margin: 0;
 }
 
 #navbar {
@@ -36,6 +40,7 @@ form{
     flex-direction: column;
     align-items: center;
     width: 250px;
+    margin-bottom: 25px;
     
     //margin-top: 20px;
 }
@@ -52,7 +57,7 @@ input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin-top: 25px;
     border: none;
     border-radius: 16px;
     cursor: pointer;
@@ -63,7 +68,6 @@ input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
     border: none;
     border-radius: 16px;
     cursor: pointer;
