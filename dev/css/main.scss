@@ -1,20 +1,20 @@
-@import 'fuentes', 'inicio','home';
+@import 'fuentes', 'inicio', 'home', 'login', 'register';
 
 * {
     margin: 0;
 }
-    
+
 .seccion {
     height: 568px;
     width: 320px;
     border: 1px solid black;
 }
-    
+
 .ocultar {
     display: none;
 }
-    
-.navbar{
+
+.navbar {
     height: 35px;
     border: 1px solid black;
     display: flex;
