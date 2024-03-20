@@ -28,19 +28,21 @@ h1{
 
 #boton-vendedor{
     margin-bottom: 31px;
-    background-color: blue;
+    background-color: #28E0E8;
 }
 
 #boton-comprador{
-    background-color: green;
+    background-color: #18BF13;
     margin-bottom: 56px;
 }
 
 
 
 #logo-inicio{
-    
-    margin-top: 93px;
+    background-image: url('/dev/img/logo.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
     margin-bottom: 42px; 
     width: 222px;
     height: 138.76px;
