@@ -4,3 +4,10 @@ dist/
 build/
 *.log
 .DS_Store
+*.iml
+.idea
+.gradle
+build/
+.navigation
+captures/
+output.json
