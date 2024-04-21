@@ -39,15 +39,6 @@
     font-size: 20px;
 }
 
-.btn_wpp {
-    height: 40px;
-    width: 100%;
-    margin: 0 35px;
-    border-radius: 15px;
-    font-size: 20px;
-    background-color: transparent;
-}
-
 footer {
     margin-top: auto;
     margin-bottom: 35px;
@@ -65,5 +56,8 @@ textarea {
     margin: 0 35px;
     margin-top: 16px;
     margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 380px;
     box-sizing: border-box;
 }

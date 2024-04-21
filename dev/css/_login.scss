@@ -1,21 +1,4 @@
-.login-box {
-    height: 568px;
-    width: 320px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // background-image: url('/dev/img/login_vendedor_figma.png');
-    background-size: cover;
-    background-position: center;
-}
-
-#no-cuenta-texto {
-    margin: 0;
-}
-
 #logo-login {
-
     height: 139px;
     width: 222px;
     border: 9px;
@@ -31,36 +14,4 @@ form {
     align-items: center;
     width: 250px;
     margin-bottom: 25px;
-
-    //margin-top: 20px;
-}
-
-input[type="text"],
-input[type="password"] {
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 250px;
-    height: 30px;
-    margin-bottom: 5px;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin-top: 25px;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
-    width: 250px;
-}
-
-#boton-registro {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
-    width: 250px;
 }

@@ -1,18 +1,4 @@
-.register-box {
-    height: 568px;
-    width: 320px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // background-image: url('/dev/img/registro_vendedor_figma.png');
-    background-size: cover;
-    background-position: center;
-}
-
-
 #logo-register {
-
     height: 139px;
     width: 222px;
     border: 9px;
@@ -26,39 +12,5 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
-
-
-    //margin-top: 20px;
-}
-
-input[type="text"],
-input[type="password"] {
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 250px;
-    height: 30px;
-    margin-bottom: 14px;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
-    width: 250px;
-}
-
-#boton-registro {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
     width: 250px;
 }

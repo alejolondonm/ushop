@@ -3,7 +3,6 @@
 }
 
 #productos_venta {
-    /* background-image: url('/dev/img/home_vendedor_figma.png'); */
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -15,7 +14,7 @@
 .perfil {
     position: absolute;
     width: 28px;
-    left: 280px;
+    right: 10px;
     cursor: pointer;
 }
 
@@ -23,7 +22,7 @@
     position: absolute;
     width: 28px;
     top: -10px;
-    left: 230px;
+    right: -10px;
     background-color: white;
     cursor: pointer;
 }
@@ -100,7 +99,7 @@
 
 .barra-inferior {
     height: 50px;
-    width: 320px;
+    width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;

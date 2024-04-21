@@ -3,39 +3,12 @@ h1 {
     margin-bottom: 32px;
 }
 
-
-.inicio-box {
-    height: 568px;
-    width: 320px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // background-image: url('/dev/img/inicio_figma.png');
-    background-size: cover;
+.naranja {
+    background-color: #eb690a;
 }
 
-.inicio-box button {
-    width: 250px;
-    height: 40px;
-    border-radius: 16px;
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#boton-vendedor {
-    margin-bottom: 31px;
-    background-color: blue;
-    cursor: pointer;
-}
-
-#boton-comprador {
-    background-color: green;
-    margin-bottom: 56px;
-    cursor: pointer;
+.negro {
+    background-color: black;
 }
 
 #logo-inicio {

@@ -10,46 +10,47 @@
 
 <body>
     <script src="./js/script.js"></script>
-    <script type="module" src="./js/producto_compra.js"></script>
-
-    <section id="inicio" class="inicio-box">
+    <script src="./js/producto_compra.js" type="module"></script>
+    <section id="inicio" class="seccion centered">
         <div id="logo-inicio"></div>
         <h2>¡Bienvenido!</h2>
         <h1>Ingresar como</h1>
-        <button id="boton-vendedor" onclick="cambiarSeccion('inicio','login')">Vendedor</button>
-        <button id="boton-comprador" onclick="cambiarSeccion('inicio','home')">Comprador</button>
+        <button class="boton naranja mb-30" onclick="cambiarSeccion('inicio','login')">Vendedor</button>
+        <button class="boton negro" onclick="cambiarSeccion('inicio','home')">Comprador</button>
 
     </section>
-    <section id="login" class="login-box ocultar">
+    <section id="login" class="seccion centered ocultar">
         <nav class="navbar">
             <img class="flecha_atras" src="/dev/img/iconos/flecha-izquierda.png"
                 onclick="cambiarSeccion('login','inicio')" alt="Flecha para atras"></img>
         </nav>
         <div id="logo-login"></div>
-        <h2>Ingresa</h2>
-        <form action="">
-            <input type="text" placeholder="Correo" required>
-            <input type="password" placeholder="Contraseña" required>
-            <input type="submit" value="Ingresar" onclick="cambiarSeccion('login','productos_venta')">
-            <!-- <input type="submit" value="Registrate"> -->
+        <h2 class="mb-30">Ingresa</h2>
+
+        <form id="login-form">
+            <input id="correo-login" type="text" placeholder="Correo" required>
+            <input id="contrasena-login" type="password" placeholder="Contraseña" required>
+            <input type="submit" class="boton naranja mb-30" value="Ingresar"
+                onclick="cambiarSeccion('login','productos_venta')">
         </form>
         <p id="no-cuenta-texto">¿No tienes cuenta?</p>
-        <button id="boton-registro" onclick="cambiarSeccion('login','register')">Registrate</button>
+        <button class="boton negro" onclick="cambiarSeccion('login','register')">Registrate</button>
 
     </section>
-    <section id="register" class="register-box ocultar">
+    <section id="register" class="seccion centered ocultar">
         <nav class="navbar">
             <img class="flecha_atras" src="/dev/img/iconos/flecha-izquierda.png"
                 onclick="cambiarSeccion('register','login')" alt="Flecha para atras"></img>
         </nav>
         <div id="logo-register"></div>
-        <h2>Registrate</h2>
+        <h2 class="mb-30">Registrate</h2>
         <form action="">
             <input type="text" placeholder="Nombre Completo" required>
             <input type="text" placeholder="Correo" required>
             <input type="text" placeholder="Celular" required>
             <input type="password" placeholder="Contraseña" required>
-            <input type="submit" value="Crear Cuenta" onclick="cambiarSeccion('register','productos_venta')">
+            <input type="submit" class="boton naranja mb-30" value="Crear Cuenta"
+                onclick="cambiarSeccion('register','productos_venta')">
         </form>
 
     </section>
@@ -60,8 +61,8 @@
                 onclick="cambiarSeccion('home','inicio')" alt="Flecha para atras"></img>
         </nav>
         <section class="buscador center">
-            <img src="/dev/img/iconos/lupa.png" alt="Buscar"></img>
-            <input placeholder="Buscar"></input>
+            <!--   <img src="/dev/img/iconos/lupa.png" alt="Buscar"></img> -->
+            <input class="input-buscador" placeholder="Buscar"></input>
         </section>
         <section class="categorias">
             <div id="cambiar-categoria-izquierda" class="cambiar-categoria cambiar-categoria-izquierda center">
@@ -122,7 +123,7 @@
                 No Disponible
             </div>
         </section>
-        <section class="productos">
+        <section class="productos centered">
             <div class="producto" onclick="cambiarSeccion('home','producto_compra')">
                 <div class="foto-producto center">
                     <img src="/dev/img/productos/papitas.jpg" alt="papitas"></img>
@@ -223,13 +224,13 @@
         </section>
         <section class="informacion_producto center">
             <h3>$10.000</h3>
-            <textarea readonly
+            <textarea readonly class="product-description"
                 rows="4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consectetur nihil, quia sint natus aperiam!</textarea>
             <h3>Julian Ortiz</h3>
 
         </section>
         <footer class="footer center">
-            <button class="btn_wpp center">
+            <button class="boton naranja center">
                 <span>Ir a whatsapp </span>
                 <img class="wpp_icon" src="/dev/img/redes/whatsapp.png" alt="wpp">
             </button>
@@ -251,7 +252,7 @@
                 <img src="/dev/img/iconos/edit.png" class="editar" alt="editar"></img>
                 <div class="foto-producto-vendedor">
                     <img src="/dev/img/productos/papitas.jpg" alt="papitas"></img>
-                    
+
                     <div class="descripcion-producto">
                         Papas de queso, con adición de quesocrema
                     </div>
@@ -411,8 +412,8 @@
             <input id="descripcion" type="text" placeholder="   Descripción">
             <input id="precio" type="text" placeholder="   Precio">
 
-            <button class="btn center">
-                <span>Crear Producto</span>
+            <button class="boton naranja center">
+                Crear Producto
             </button>
 
         </div>
@@ -458,8 +459,8 @@
             <input id="descripcion" type="text" placeholder="   Descripción">
             <input id="precio" type="text" placeholder="   Precio">
 
-            <button class="btn center">
-                <span>Guardar Cambios</span>
+            <button class="boton naranja center">
+                Guardar Cambios
             </button>
 
         </div>
@@ -483,10 +484,10 @@
         </section>
         <section class="botones-footer center">
 
-            <button id="guardar-btn" class="general_btn center">
+            <button class="boton naranja mb-10 center">
                 Guardar cambios
             </button>
-            <button class="general_btn center">
+            <button class="boton negro center">
                 <span>Eliminar cuenta </span>
             </button>
 
